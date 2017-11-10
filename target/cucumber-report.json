@@ -1,0 +1,92 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Successful Login with Valid Credentials",
+        "description": "",
+        "id": "login-action;successful-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 223998031009,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "Steps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 784812691,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Navigate to Login Page",
+            "match": {
+              "location": "Steps.user_Navigate_to_Login_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 135844355896,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters UserName \"testuser_1\" and Password \"Test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser_1",
+                  "offset": 22
+                },
+                {
+                  "val": "Test@123",
+                  "offset": 48
+                }
+              ],
+              "location": "Steps.user_enters_UserName_and_Password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3797484100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Close Home Page",
+            "match": {
+              "location": "Steps.close_Home_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Login Action",
+    "description": "I want to use this template for my feature file",
+    "id": "login-action",
+    "keyword": "Feature",
+    "uri": "src/main/resources/features/LoginTest.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@tag"
+      }
+    ]
+  }
+]
